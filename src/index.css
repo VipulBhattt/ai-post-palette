@@ -8,35 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Clean, modern content planner design system */
+    --background: 250 20% 99%;
+    --foreground: 240 15% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 240 15% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 240 15% 9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Soft purple-blue primary inspired by Linear */
+    --primary: 250 84% 54%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Subtle gray secondary */
+    --secondary: 240 10% 96%;
+    --secondary-foreground: 240 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 10% 95%;
+    --muted-foreground: 240 8% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Soft lavender accent */
+    --accent: 260 60% 92%;
+    --accent-foreground: 260 25% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 20% 88%;
+    --input: 240 20% 94%;
+    --ring: 250 84% 54%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Content planner specific tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(250 84% 54%), hsl(280 70% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(260 60% 92%), hsl(220 60% 92%));
+    --gradient-success: linear-gradient(135deg, hsl(140 60% 92%), hsl(160 50% 90%));
+    
+    /* Stat colors */
+    --stats-engagement: 140 60% 50%;
+    --stats-reach: 200 80% 55%;
+    --stats-impressions: 280 70% 60%;
+    
+    /* Shadow tokens */
+    --shadow-soft: 0 2px 8px -2px hsl(240 20% 20% / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(240 20% 20% / 0.12);
+    --shadow-large: 0 12px 32px -8px hsl(240 20% 20% / 0.16);
 
     --sidebar-background: 0 0% 98%;
 
