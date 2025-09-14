@@ -10,6 +10,7 @@ import Generator from "./pages/Generator";
 import Analytics from "./pages/Analytics";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+import ProfileSocials from "./pages/profile/socials";
 import {
   SignIn,
   SignUp,
@@ -74,7 +75,7 @@ const App = () => (
         {/* Protected app routes */}
         <Route path="/calendar" element={<ProtectedRoute><Calendar /></ProtectedRoute>} />
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-
+        <Route path="/profile/socials" element={<ProtectedRoute><ProfileSocials /></ProtectedRoute>} />
         <Route path="/generator" element={<ProtectedRoute><Generator /></ProtectedRoute>} />
         <Route path="/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
         <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />

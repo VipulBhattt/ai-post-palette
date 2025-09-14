@@ -2,7 +2,7 @@ import { SidebarProvider, SidebarTrigger, SidebarInset } from "@/components/ui/s
 import { AppSidebar } from "./AppSidebar";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
-import { UserButton } from "@clerk/clerk-react";
+import { UserMenu } from "@/components/UserMenu"; // Import your custom UserMenu
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -24,15 +24,8 @@ export function MainLayout({ children }: MainLayoutProps) {
               <p className="text-sm text-muted-foreground">Let's create amazing content today</p>
             </div>
 
-            {/* Profile button with Clerk user avatar */}
-            <UserButton
-              afterSignOutUrl="/sign-in"
-              appearance={{
-                elements: {
-                  userButtonAvatarBox: "h-8 w-8 rounded-full",
-                },
-              }}
-            />
+            {/* Replace UserButton with custom UserMenu */}
+            <UserMenu />
 
             {/* Floating Create Button for Mobile */}
             <div className="md:hidden">
