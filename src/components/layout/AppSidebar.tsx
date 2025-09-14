@@ -23,7 +23,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 const navigationItems = [
-  { title: "Dashboard", url: "/", icon: LayoutDashboard },
+  { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
   { title: "Calendar", url: "/calendar", icon: Calendar },
   { title: "AI Generator", url: "/generator", icon: Sparkles },
   { title: "Analytics", url: "/analytics", icon: BarChart3 },
